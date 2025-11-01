@@ -22,30 +22,30 @@ Successfully implemented a sophisticated recurring CAPEX planning system that tr
 
 ### 2. Predefined Categories with Smart Defaults
 
-**Buildings & Facilities**
-- Asset Types: Buildings/Leasehold improvements, Infrastructure improvements
-- Default Recurrence: 5 years
-- Default Depreciation: 15 years
-
-**Furniture, Fixtures & Equipment (FF&E)**
-- Asset Types: Furniture & equipment, Specialized equipment
-- Default Recurrence: 5 years
+**1. Buildings & Facilities**
+- Asset Types: Buildings/Leasehold improvements
+- Default Recurrence: 2 years
 - Default Depreciation: 10 years
 
-**IT & Digital Learning**
-- Asset Types: Computer equipment, Audio/visual equipment, Software/licensing/intangibles
+**2. Furniture, Fixtures & Equipment (FF&E)**
+- Asset Types: Furniture & Equipment
 - Default Recurrence: 2 years
-- Default Depreciation: 4 years
+- Default Depreciation: 10 years
 
-**Transportation & Campus Operations**
-- Asset Types: Vehicle fleet, Maintenance equipment
+**3. IT & Digital Learning**
+- Asset Types: Computer Equipment/Intangibles
+- Default Recurrence: 2 years
+- Default Depreciation: 2 years
+
+**4. Transportation**
+- Asset Types: Vehicles/Equipment
+- Default Recurrence: 4 years
+- Default Depreciation: 2 years
+
+**5. Strategic/Safety**
+- Asset Types: Specialized Assets / Intangibles
 - Default Recurrence: 4 years
 - Default Depreciation: 4 years
-
-**Strategic, Safety & Sustainability**
-- Asset Types: Safety/security systems, Sustainability/green initiatives
-- Default Recurrence: 5 years
-- Default Depreciation: 10 years
 
 ### 3. Configuration Interface
 
@@ -240,10 +240,10 @@ assumptions.capex_table = allCAPEX
 ### Example 1: IT Equipment Refresh Cycle
 
 **Configuration:**
-- Category: IT & Digital Learning
-- Asset Type: Computer equipment
+- Category: 3. IT & Digital Learning
+- Asset Type: Computer Equipment/Intangibles
 - Recurrence: 2 years
-- Depreciation: 4 years
+- Depreciation: 2 years
 - Base Amount: 750,000 SAR
 - Starting Year: 2028
 
@@ -252,22 +252,22 @@ assumptions.capex_table = allCAPEX
 ### Example 2: Building Infrastructure
 
 **Configuration:**
-- Category: Buildings & Facilities
-- Asset Type: Infrastructure improvements
-- Recurrence: 5 years
-- Depreciation: 15 years
+- Category: 1. Buildings & Facilities
+- Asset Type: Buildings/Leasehold improvements
+- Recurrence: 2 years
+- Depreciation: 10 years
 - Base Amount: 3,000,000 SAR
 - Starting Year: 2030
 
-**Result:** 5 CAPEX entries (2030, 2035, 2040, 2045, 2050)
+**Result:** 12 CAPEX entries from 2030-2052, every 2 years
 
 ### Example 3: Vehicle Fleet Replacement
 
 **Configuration:**
-- Category: Transportation & Campus Operations
-- Asset Type: Vehicle fleet
+- Category: 4. Transportation
+- Asset Type: Vehicles/Equipment
 - Recurrence: 4 years
-- Depreciation: 4 years
+- Depreciation: 2 years
 - Base Amount: 1,200,000 SAR
 - Starting Year: 2028
 

@@ -39,32 +39,32 @@ Your assumptions page now has TWO CAPEX sections instead of one:
 
 #### IT Equipment (Refresh Every 2 Years)
 ```
-Category: IT & Digital Learning
-Asset Type: Computer equipment
+Category: 3. IT & Digital Learning
+Asset Type: Computer Equipment/Intangibles
 Recurrence: 2 years
-Depreciation: 4 years
+Depreciation: 2 years
 Base Amount: 500,000 SAR
 Starting Year: 2028
 → Generates: 2028, 2030, 2032, ..., 2052 (13 entries)
 ```
 
-#### Building Maintenance (Every 5 Years)
+#### Building Maintenance (Every 2 Years)
 ```
-Category: Buildings & Facilities
-Asset Type: Infrastructure improvements
-Recurrence: 5 years
-Depreciation: 15 years
+Category: 1. Buildings & Facilities
+Asset Type: Buildings/Leasehold improvements
+Recurrence: 2 years
+Depreciation: 10 years
 Base Amount: 2,000,000 SAR
 Starting Year: 2030
-→ Generates: 2030, 2035, 2040, 2045, 2050 (5 entries)
+→ Generates: 2030, 2032, 2034, ..., 2052 (12 entries)
 ```
 
 #### Vehicle Replacement (Every 4 Years)
 ```
-Category: Transportation & Campus Operations
-Asset Type: Vehicle fleet
+Category: 4. Transportation
+Asset Type: Vehicles/Equipment
 Recurrence: 4 years
-Depreciation: 4 years
+Depreciation: 2 years
 Base Amount: 1,200,000 SAR
 Starting Year: 2028
 → Generates: 2028, 2032, 2036, 2040, 2044, 2048, 2052 (7 entries)
@@ -76,11 +76,11 @@ When you select a category, the system auto-fills recommended values:
 
 | Category | Default Recurrence | Default Depreciation |
 |----------|-------------------|---------------------|
-| Buildings & Facilities | 5 years | 15 years |
-| FF&E | 5 years | 10 years |
-| IT & Digital Learning | 2 years | 4 years |
-| Transportation | 4 years | 4 years |
-| Strategic/Safety | 5 years | 10 years |
+| 1. Buildings & Facilities | 2 years | 10 years |
+| 2. FF&E | 2 years | 10 years |
+| 3. IT & Digital Learning | 2 years | 2 years |
+| 4. Transportation | 4 years | 2 years |
+| 5. Strategic/Safety | 4 years | 4 years |
 
 You can override these defaults anytime.
 

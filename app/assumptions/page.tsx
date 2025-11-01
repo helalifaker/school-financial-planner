@@ -25,37 +25,37 @@ interface RecurringCAPEXConfig {
   startingYear: number
 }
 
-// Category configurations with predefined values
+// Category configurations with predefined values (corrected from OCR data)
 const CAPEX_CATEGORIES = {
   buildings_facilities: {
-    label: 'Buildings & Facilities',
-    assetTypes: ['Buildings / Leasehold improvements', 'Infrastructure improvements'],
-    defaultRecurrence: 5,
-    defaultDepreciation: 15
+    label: '1. Buildings & Facilities',
+    assetTypes: ['Buildings/Leasehold improvements'],
+    defaultRecurrence: 2,
+    defaultDepreciation: 10
   },
   ffe: {
-    label: 'Furniture, Fixtures & Equipment (FF&E)',
-    assetTypes: ['Furniture & equipment', 'Specialized equipment'],
-    defaultRecurrence: 5,
+    label: '2. Furniture, Fixtures & Equipment (FF&E)',
+    assetTypes: ['Furniture & Equipment'],
+    defaultRecurrence: 2,
     defaultDepreciation: 10
   },
   it_digital: {
-    label: 'IT & Digital Learning',
-    assetTypes: ['Computer equipment', 'Audio/visual equipment', 'Software/licensing/intangibles'],
+    label: '3. IT & Digital Learning',
+    assetTypes: ['Computer Equipment/Intangibles'],
     defaultRecurrence: 2,
-    defaultDepreciation: 4
+    defaultDepreciation: 2
   },
   transportation: {
-    label: 'Transportation & Campus Operations',
-    assetTypes: ['Vehicle fleet', 'Maintenance equipment'],
+    label: '4. Transportation',
+    assetTypes: ['Vehicles/Equipment'],
     defaultRecurrence: 4,
-    defaultDepreciation: 4
+    defaultDepreciation: 2
   },
   strategic: {
-    label: 'Strategic, Safety & Sustainability',
-    assetTypes: ['Safety/security systems', 'Sustainability/green initiatives'],
-    defaultRecurrence: 5,
-    defaultDepreciation: 10
+    label: '5. Strategic/Safety',
+    assetTypes: ['Specialized Assets / Intangibles'],
+    defaultRecurrence: 4,
+    defaultDepreciation: 4
   }
 }
 
@@ -131,18 +131,18 @@ export default function AssumptionsPage() {
     {
       id: '1',
       category: 'it_digital',
-      assetType: 'Computer equipment',
+      assetType: 'Computer Equipment/Intangibles',
       recurrenceYears: 2,
-      depreciationYears: 4,
+      depreciationYears: 2,
       baseAmount: 500000,
       startingYear: 2028
     },
     {
       id: '2',
       category: 'buildings_facilities',
-      assetType: 'Infrastructure improvements',
-      recurrenceYears: 5,
-      depreciationYears: 15,
+      assetType: 'Buildings/Leasehold improvements',
+      recurrenceYears: 2,
+      depreciationYears: 10,
       baseAmount: 2000000,
       startingYear: 2030
     }
